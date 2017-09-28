@@ -26,16 +26,22 @@ public class PlayservicesUtilPlugin extends CordovaPlugin {
   }
 
   public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONExcepti
-    if(action.equals("echo")) {
-      String phrase = args.getString(0);
-      // Echo back the first argument
-      Log.d(TAG, phrase);
+    if(action.equals("getPlayservicesVersion")) {
+    final PluginResult result = new PluginResult(PluginResult.Status.OK, String.valueOf(this.getPlayservicesVersion()));
+    callbackContext.sendPluginResult(result);
     } else if(action.equals("getDate")) {
-      // An example of returning data back to the web layer
-      final PluginResult result = new PluginResult(PluginResult.Status.OK, (new Date()).toString());
-      callbackContext.sendPluginResult(result);
+    final PluginResult result = new PluginResult(PluginResult.Status.OK, String.valueOf(this.getWebviewVersion()));
+    callbackContext.sendPluginResult(result);
     }
     return true;
+  }
+
+  private int getPlayservicesVersion() {
+    return -1;
+  }
+
+  private int getWebviewVersion() {
+    return -1;
   }
 
 }
