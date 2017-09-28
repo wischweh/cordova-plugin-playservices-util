@@ -1,3 +1,16 @@
-dependencies {
-  classpath 'com.google.gms:google-services:3.1.0'
+repositories {
+  jcenter()
 }
+
+android {
+  defaultConfig {
+    minSdkVersion 16
+    targetSdkVersion 22
+  }
+}
+
+dependencies {
+  compile 'com.google.gms:google-services:3.1.0'
+}
+
+apply plugin: 'com.google.gms.google-services'
