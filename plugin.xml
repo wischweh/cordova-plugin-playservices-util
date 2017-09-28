@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="my-cordova-plugin"
-    version="1.0.0">
+    version="0.0.1">
     <name>Cordova Plugin Template</name>
     <description></description>
     <license>MIT</license>
@@ -20,12 +20,12 @@
       </js-module>
       <config-file target="res/xml/config.xml" parent="/*">
         <feature name="PlayservicesUtil">
-          <param name="android-package" value="de.ndr.PlayservicesUtil" />
+          <param name="android-package" value="de.ndr.playservices-util.PlayservicesUtilPlugin" />
           <param name="onload" value="true" />
         </feature>
       </config-file>
 
-      <source-file src="src/android/com/example/MyCordovaPlugin.java" target-dir="src/com/example/" />
+      <source-file src="src/android/de/ndr/playservices-util/PlayservicesUtilPlugin.java" target-dir="src/de/ndr/playservices-util" />
     </platform>
 
 </plugin>

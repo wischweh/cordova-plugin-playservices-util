@@ -1,6 +1,6 @@
 /**
  */
-package com.example;
+package de.ndr.playservices-util;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
@@ -16,7 +16,7 @@ import android.util.Log;
 
 import java.util.Date;
 
-public class MyCordovaPlugin extends CordovaPlugin {
+public class PlayservicesUtilPlugin extends CordovaPlugin {
   private static final String TAG = "MyCordovaPlugin";
 
   public void initialize(CordovaInterface cordova, CordovaWebView webView) {
@@ -25,7 +25,7 @@ public class MyCordovaPlugin extends CordovaPlugin {
     Log.d(TAG, "Initializing MyCordovaPlugin");
   }
 
-  public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
+  public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONExcepti
     if(action.equals("echo")) {
       String phrase = args.getString(0);
       // Echo back the first argument
