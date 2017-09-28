@@ -1,12 +1,11 @@
 {
-  "name": "cordova-plugin-template",
-  "version": "1.0.0",
+  "name": "cordova-plugin-playservices-util",
+  "version": "0.0.1",
   "cordova": {
-    "id": "cordova-plugin-template",
+    "id": "cordova-plugin-playservices-util",
     "platforms": [
       "android",
-      "ios",
     ]
   },
-  "description": "A starting point for a Cordova Plugin"
+  "description": "A plugin helping you to interact with the Google Play Services API."
 }
