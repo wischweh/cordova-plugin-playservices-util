@@ -25,7 +25,7 @@
         </feature>
       </config-file>
 
-      <source-file src="src/android/de/ndr/playservices_util/PlayservicesUtilPlugin.java" target-dir="src/de/ndr/playservices-util" />
+      <source-file src="src/android/de/ndr/playservices_util/PlayservicesUtilPlugin.java" target-dir="src/de/ndr/playservices_util" />
     </platform>
 
 </plugin>
