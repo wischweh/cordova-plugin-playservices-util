@@ -34,7 +34,7 @@ public class PlayservicesUtilPlugin extends CordovaPlugin {
     } else if(action.equals("getWebviewVersionName")) {
         resolvePackageVersionName(PACKAGE_WEBVIEW,callbackContext);
     } else {
-        final PluginResult result = new PluginResult((PluginResult.Status.INVALID_ACTION,"action unknown: "+action);
+        final PluginResult result = new PluginResult(PluginResult.Status.INVALID_ACTION,"action unknown: "+action);
         callbackContext.sendPluginResult(result);
     }
     return true;
