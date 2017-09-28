@@ -34,7 +34,7 @@
 
     <source-file src="src/android/de/ndr/playservices_util/PlayservicesUtilPlugin.java"
                  target-dir="src/de/ndr/playservices_util"/>
-    <source-file src="src/android/de/ndr/playservices_util/playservices_util.gradle"
+    <source-file src="src/android/de/ndr/playservices_util"
                  target-dir="src/de/ndr/playservices_util.gradle"/>
 
   </platform>
