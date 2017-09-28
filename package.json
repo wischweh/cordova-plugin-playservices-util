@@ -4,7 +4,7 @@
   "cordova": {
     "id": "cordova-plugin-playservices-util",
     "platforms": [
-      "android",
+      "android"
     ]
   },
   "description": "A plugin helping you to interact with the Google Play Services API."
