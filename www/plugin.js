@@ -1,15 +1,17 @@
 
 var exec = require('cordova/exec');
 
-var PLUGIN_NAME = 'MyCordovaPlugin';
+var PLUGIN_NAME = 'PlayservicesUtil';
 
-var MyCordovaPlugin = {
-  echo: function(phrase, cb) {
-    exec(cb, null, PLUGIN_NAME, 'echo', [phrase]);
+var PlayservicesUtil = {
+  getPlayservicesVersionNumber: function(cb) {
+    exec(cb, null, PLUGIN_NAME, 'getPlayservicesVersionNumber', []);
   },
-  getDate: function(cb) {
-    exec(cb, null, PLUGIN_NAME, 'getDate', []);
-  }
+  getWebviewVersionNumber: function(phrase, cb) {
+    exec(cb, null, PLUGIN_NAME, 'getWebviewVersionNumber', []);
+  },
+
+
 };
 
-module.exports = MyCordovaPlugin;
+module.exports = PlayservicesUtil;
