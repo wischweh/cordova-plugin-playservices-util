@@ -35,7 +35,9 @@ public class PlayservicesUtilPlugin extends CordovaPlugin {
         resolvePackageVersionName(PACKAGE_WEBVIEW,callbackContext);
     } else {
         final PluginResult result = new PluginResult(PluginResult.Status.INVALID_ACTION,"action unknown: "+action);
+        Log.e(TAG,"plugin error: invalid action");
         callbackContext.sendPluginResult(result);
+
     }
     return true;
   }
@@ -47,10 +49,13 @@ public class PlayservicesUtilPlugin extends CordovaPlugin {
           public void run() {
               try {
                   String versionName=cordova.getActivity().getPackageManager().getPackageInfo(packageName,0).versionName;
+                  int versionNumber=cordova.getActivity().getPackageManager().getPackageInfo(packageName,0).versionCode;
                   final PluginResult result = new PluginResult(PluginResult.Status.OK, versionName);
+                  Log.d(TAG,"sending result: "+versionName+" ("+versionNumber+")");
                   callbackContext.sendPluginResult(result);
               } catch (PackageManager.NameNotFoundException nameNotFound) {
                   final PluginResult result = new PluginResult(PluginResult.Status.ERROR, "Package Name Not found: "+packageName+": "+nameNotFound);
+                  Log.e(TAG,"plugin error",nameNotFound);
                   callbackContext.sendPluginResult(result);
               }
           }
