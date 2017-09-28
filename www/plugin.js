@@ -4,11 +4,11 @@ var exec = require('cordova/exec');
 var PLUGIN_NAME = 'PlayservicesUtil';
 
 var PlayservicesUtil = {
-  getPlayservicesVersionNumber: function(cb) {
-    exec(cb, null, PLUGIN_NAME, 'getPlayservicesVersionNumber', []);
+  getPlayservicesVersionName: function(cb) {
+    exec(cb, null, PLUGIN_NAME, 'getPlayservicesVersionName', []);
   },
-  getWebviewVersionNumber: function(phrase, cb) {
-    exec(cb, null, PLUGIN_NAME, 'getWebviewVersionNumber', []);
+  getWebviewVersionName: function(phrase, cb) {
+    exec(cb, null, PLUGIN_NAME, 'getWebviewVersionName', []);
   },
 
 
