@@ -19,7 +19,7 @@ public class PlayservicesUtilPlugin extends CordovaPlugin {
 
     private static final String TAG = "PlayservicesUtilPlugin";
 
-    private static final String PACKAGE_WEBVIEW="com.google.android.webview"
+    private static final String PACKAGE_WEBVIEW="com.google.android.webview";
 
 
   public void initialize(CordovaInterface cordova, CordovaWebView webView) {
