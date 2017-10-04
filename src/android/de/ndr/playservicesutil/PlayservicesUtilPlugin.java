@@ -1,6 +1,6 @@
 /**
  */
-package de.ndr.playservices_util;
+package de.ndr.playservicesutil;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
