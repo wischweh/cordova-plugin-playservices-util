@@ -7,7 +7,7 @@ var PlayservicesUtil = {
   getPlayservicesVersionNumber: function(cb) {
     exec(cb, null, PLUGIN_NAME, 'getPlayservicesVersionNumber', []);
   },
-  getWebviewVersionNumber: function(phrase, cb) {
+  getWebviewVersionNumber: function(cb) {
     exec(cb, null, PLUGIN_NAME, 'getWebviewVersionNumber', []);
   },
 
