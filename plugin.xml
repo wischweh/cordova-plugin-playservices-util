@@ -20,7 +20,7 @@
       </js-module>
       <config-file target="res/xml/config.xml" parent="/*">
         <feature name="PlayservicesUtil">
-          <param name="android-package" value="de.ndr.playservices_util.PlayservicesUtilPlugin" />
+          <param name="android-package" value="de.ndr.playservices_util" />
           <param name="onload" value="true" />
         </feature>
       </config-file>
