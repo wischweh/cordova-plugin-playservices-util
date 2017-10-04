@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="cordova-plugin-playservices-util"
     version="0.0.1">
-    <name>Cordova Plugin Template</name>
+    <name>Cordova Plugin Google Playservices Util</name>
     <description></description>
     <license>MIT</license>
     <keywords></keywords>
